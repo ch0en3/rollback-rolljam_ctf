@@ -2,16 +2,15 @@
 题目部署需要至少两块esp32+cc1101模块
 
 以下是esp32与cc1101的连接方法:
+
     电源连接：
         VCC (CC1101) 连接到 3.3V (ESP32)
         GND (CC1101) 连接到 GND (ESP32)
-
     SPI 接口连接：
         MOSI (CC1101) 连接到 MOSI (ESP32 GPIO 23)
         MISO (CC1101) 连接到 MISO (ESP32 GPIO 19)
         SCK (CC1101) 连接到 SCK (ESP32 GPIO 18)
         CSN (CS/SS) (CC1101) 连接到 CS/SS (ESP32 GPIO 5)
-
     GDO 引脚连接：
         GDO0 (CC1101) 连接到 ESP32 GPIO 4 (或任意可用 GPIO)
         GDO2 (CC1101) 连接到 ESP32 GPIO 15 (或任意可用 GPIO)
